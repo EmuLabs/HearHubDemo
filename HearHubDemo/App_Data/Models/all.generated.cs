@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a30b849982dc632a")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "76219740becd1880")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -36,37 +36,30 @@ using  Umbraco.ModelsBuilder.Embedded;
 
 namespace Umbraco.Web.PublishedModels
 {
-	/// <summary>Normal Page</summary>
-	[PublishedModel("normalPage")]
-	public partial class NormalPage : PublishedContentModel
+	/// <summary>homepage</summary>
+	[PublishedModel("homepage")]
+	public partial class Homepage : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.3")]
-		public new const string ModelTypeAlias = "normalPage";
+		public new const string ModelTypeAlias = "homepage";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.3")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.3")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.3")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NormalPage, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Homepage, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public NormalPage(IPublishedContent content)
+		public Homepage(IPublishedContent content)
 			: base(content)
 		{ }
 
 		// properties
-
-		///<summary>
-		/// image1: image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.3")]
-		[ImplementPropertyType("image1")]
-		public virtual global::Umbraco.Core.Models.MediaWithCrops Image1 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("image1");
 
 		///<summary>
 		/// text1
